@@ -1,10 +1,11 @@
 import React from 'react'
 import './Header.css'
+import Navigation from './navigation/Navigation'
 
 const Header = () => { 
     return (
         <header>
-            <h1>HELLOOO</h1>
+            <Navigation/>
         </header>
     )
 }
