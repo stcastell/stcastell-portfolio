@@ -1,6 +1,10 @@
 nav{
     display: grid;
     place-items: center;
+    position: absolute;
+    width: 100%;
+    transition: 500ms all ease-out;
+    top: -361px;
 }
 nav ul{
     background-color: rgba(0, 0, 0, 0.8);
@@ -24,15 +28,19 @@ nav ul li a:hover{
     color: #FAFA00;
 }
 
-.nav-button{
+.nav-button button{
     background-color: #FAFA00;
     width: 150px;
     height: 57.5px;
     display: grid;
     place-items: center;
     border-radius: 0px 0px 200px 200px / 0px 0px 150px 150px;
+    border: 0px solid #FAFA00;
 }
 .nav-button i{
     font-weight: bold;
     font-size:30px;
+}
+.active{
+    top: 0px;
 }
