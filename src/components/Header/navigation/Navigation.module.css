@@ -1,10 +1,14 @@
 nav{
     display: grid;
     place-items: center;
-    position: absolute;
+    position: fixed;
     width: 100%;
     transition: 500ms all ease-out;
     top: -361px;
+    z-index: 100;
+}
+.active {
+    top: 0px;
 }
 nav ul{
     background-color: rgba(0, 0, 0, 0.8);
@@ -22,10 +26,12 @@ nav ul li a{
     text-decoration: none;
     color:#FFF;
     font-size: 20px;
+    transition: 250ms all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 nav ul li a:hover{
     font-weight: bold;
     color: #FAFA00;
+    text-shadow: #FAFA00 0px 0 7.5px;
 }
 
 .nav-button button{
@@ -40,7 +46,4 @@ nav ul li a:hover{
 .nav-button i{
     font-weight: bold;
     font-size:30px;
-}
-.active{
-    top: 0px;
 }

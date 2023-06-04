@@ -1,3 +1,20 @@
 .profile-container{
-    
+    display: grid;
+    place-items: center;
+}
+.profile-container img{
+    border-radius: 50%;
+    border: 4px solid #FFF;
+    box-shadow: 0px 0px 33px 13px #FAFA00;
+    width: 300px;
+}
+.profile-container h1{
+    color: #FAFA00;
+    margin: 13px 0px 13px 0px;
+    font-size: 40px;
+}
+.profile-container h3{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: normal;
 }
