@@ -1,0 +1,44 @@
+.about-me-container {
+    width: 50%;
+    padding: 0px 0px 0px 30px;
+}
+
+.about-me-container h2 {
+    color: #FAFA00;
+}
+
+.about-me-container .image-n-info {
+    padding-top: 25px;
+    background-color: #241B2F;
+}
+
+.about-me-container .image {
+    border-bottom: 1px solid #36F9EA;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    height: 329px;
+}
+
+.about-me-container .image img {
+    width: 250px;
+    border-radius: 50%;
+    border: 3px solid #FAFA00;
+}
+
+.about-me-container .image p {
+    text-align: center;
+    color: #8F8F8F;
+    margin-top: 15px;
+}
+
+.about-me-container .info{
+    height: 329px;
+    display: grid;
+    place-items: center;
+}
+
+.about-me-container .info p{
+    color:#FFF;
+    padding: 15px;
+}
