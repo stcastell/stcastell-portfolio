@@ -1,6 +1,9 @@
 .about-me-container {
     width: 50%;
-    padding: 0px 0px 0px 30px;
+    padding: 0px 15px 0px 15px;
+    display: inline-block;
+    border: 1px solid red;
+
 }
 
 .about-me-container h2 {
@@ -10,6 +13,7 @@
 .about-me-container .image-n-info {
     padding-top: 25px;
     background-color: #241B2F;
+    border: 1px solid red;
 }
 
 .about-me-container .image {
