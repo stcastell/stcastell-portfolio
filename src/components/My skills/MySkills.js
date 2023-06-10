@@ -19,14 +19,14 @@ const MySkills = () => {
                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" />
                 
                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" />
-                
-                <img src="https://www.vectorlogo.zone/util/preview.html?image=/logos/reactjs/reactjs-icon.svg" alt="React.js" />
-                
-                <img src="https://github.com/devicons/devicon/blob/master/icons/php/php-original.svg" alt="PHP" />
-                
-                <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg" alt="MySQL" />
-                
-                <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" alt="Python" /> 
+
+                <img src="https://img.icons8.com/color/144/react-native.png" alt="React.js" />
+
+                <img src="https://www.php.net//images/logos/new-php-logo.svg" alt="PHP" />
+
+                <img src="https://img.icons8.com/color/144/mysql-logo.png" alt="MySQL" />
+
+                <img src="https://img.icons8.com/color/144/python--v1.png" alt="Python" />
                 
             </div>
         </div>
