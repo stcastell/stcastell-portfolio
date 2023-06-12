@@ -1,12 +1,4 @@
-@keyframes imageTransition {
-    from {
-        opacity: 0;
-    }
 
-    to {
-        opacity: 1;
-    }
-}
 .projects-container{
     margin-top: 44px;
 }
