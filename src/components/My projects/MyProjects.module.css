@@ -1,12 +1,14 @@
-
 .projects-container{
-    margin-top: 44px;
+    background-color: rgba(255, 255, 255, 0.05);
+    height: 100vh;
+    display: grid;
+    place-items: center;
 }
 .img-container{
     display: grid;
     place-items: center;
+    position: relative;
 }
 .img-container img{
     width: 75%;
-    animation: imageTransition 500ms;
 }

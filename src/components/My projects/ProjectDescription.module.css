@@ -1,0 +1,14 @@
+.description-container{
+    width: 75%;
+    height: 100%;
+    background-color: rgba(36,27,47,0.85);
+    position: absolute;
+    border: 1px solid red;
+}
+.description-container h2{
+    font-weight: normal;
+    color: #FAFA00;
+    text-align: center;
+    padding-top: 15px;
+    background-color: rgba(36, 27, 47, 0.85);
+}
