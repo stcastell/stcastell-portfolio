@@ -6,6 +6,27 @@ import '@splidejs/react-splide/css/skyblue';
 
 const MyProjects = () => {  
 
+    const projects = [
+        {
+            title: 'Jera Devs',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus qui perferendis repellendus, consequuntur harum libero enim placeat molestias atque illum vero tempore blanditiis, sit tenetur alias esse ab amet.',
+            roles: ['Role 1', 'Role 2'],
+            technologies: ['Technology 1', 'Technology 2'],
+            madeBy: 'Jera Devs',
+            githubLink: 'url',
+            websiteLink: 'url',
+        },
+        {
+            title: 'Floristería Ikebana',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus qui perferendis repellendus, consequuntur harum libero enim placeat molestias atque illum vero tempore blanditiis, sit tenetur alias esse ab amet.',
+            roles: ['Role 1', 'Role 2'],
+            technologies: ['Technology 1', 'Technology 2'],
+            madeBy: 'Jera Devs',
+            githubLink: 'url',
+            websiteLink: 'url',
+        },
+    ];
+
     return (
         <Splide aria-label="My Favorite Images" options={{
             type: 'slide',
@@ -24,7 +45,7 @@ const MyProjects = () => {
 
             <SplideSlide className={styles['img-container']}>
                 <img src="https://img001.prntscr.com/file/img001/naBL2BiiQbyNExMc6Ri4DA.png" alt="Lightshot screenshot" id="screenshot-image" image-id="2aqdyo1" />
-                <ProjectDescription title='Jera Devs'/>
+                <ProjectDescription title={projects[0].title} description={projects[0].description} />
             </SplideSlide>
 
             <SplideSlide className={styles['img-container']}>
