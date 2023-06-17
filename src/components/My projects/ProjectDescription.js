@@ -1,14 +1,18 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styles from './ProjectDescription.module.css'
 
-const ProjectDescription = props => { 
+const ProjectDescription = props => {
 
     return (
-        <div className={styles['description-container']}>
-            <h2>{props.title}</h2>
-            <p>{props.description}</p>
+        <Fragment>
+            <img src={props.data.imgSrc}/>
 
-        </div>
+            <div className={styles['description-container']}>
+                <h2>{props.data.title}</h2>
+                <p>{props.data.description}</p>
+            </div>
+        </Fragment>
+
     );
 }
 

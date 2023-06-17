@@ -7,8 +7,4 @@
 .img-container{
     display: grid;
     place-items: center;
-    position: relative;
-}
-.img-container img{
-    width: 75%;
 }
