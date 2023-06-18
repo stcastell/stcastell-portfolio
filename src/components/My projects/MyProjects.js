@@ -50,11 +50,10 @@ const MyProjects = () => {
     return (
         <Splide aria-label="My Favorite Images" options={splideOptions.options} className={styles['projects-container']}>
 
-            <SplideSlide className={styles['img-container']}>
-                {projects.map(project => <ProjectDescription data={project}/>
-                )}
-            </SplideSlide>
-            {/*ikebana image-id="2aqe3pm"*/}
+            {projects.map(project =>
+                <SplideSlide key={Math.random()} className={styles['img-container']}>
+                    <ProjectDescription data={project} />
+                </SplideSlide>)}
 
         </Splide>
     );

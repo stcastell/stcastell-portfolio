@@ -5,7 +5,7 @@ const ProjectDescription = props => {
 
     return (
         <Fragment>
-            <img src={props.data.imgSrc}/>
+            <img src={props.data.imgSrc} alt={props.data.imgAlt} />
 
             <div className={styles['description-container']}>
                 <h2>{props.data.title}</h2>

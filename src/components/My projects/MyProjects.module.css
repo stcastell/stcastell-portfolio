@@ -3,6 +3,7 @@
     height: 100vh;
     display: grid;
     place-items: center;
+    margin-top: 44px;
 }
 .img-container{
     display: grid;
