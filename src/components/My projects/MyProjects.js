@@ -13,7 +13,7 @@ const MyProjects = () => {
             imgAlt: 'Jera Devs main view',
             title: 'Jera Devs',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus qui perferendis repellendus, consequuntur harum libero enim placeat molestias atque illum vero tempore blanditiis, sit tenetur alias esse ab amet.',
-            roles: ['Role 1', 'Role 2'],
+            roles: ['Web developer', 'Web designer'],
             technologies: ['Technology 1', 'Technology 2'],
             madeBy: 'Jera Devs',
             githubLink: 'url',
@@ -25,7 +25,7 @@ const MyProjects = () => {
             imgAlt: 'Ikebana main view',
             title: 'Floristería Ikebana',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus qui perferendis repellendus, consequuntur harum libero enim placeat molestias atque illum vero tempore blanditiis, sit tenetur alias esse ab amet.',
-            roles: ['Role 1', 'Role 2'],
+            roles: ['Web developer', 'Role 2'],
             technologies: ['Technology 1', 'Technology 2'],
             madeBy: 'Jera Devs',
             githubLink: 'url',
@@ -48,14 +48,17 @@ const MyProjects = () => {
     }
 
     return (
-        <Splide aria-label="My Favorite Images" options={splideOptions.options} className={styles['projects-container']}>
+
+        <Splide options={splideOptions} className={styles['projects-container']}>
 
             {projects.map(project =>
                 <SplideSlide key={Math.random()} className={styles['img-container']}>
                     <ProjectDescription data={project} />
-                </SplideSlide>)}
+                </SplideSlide>)
+            }
 
         </Splide>
+
     );
 }
 

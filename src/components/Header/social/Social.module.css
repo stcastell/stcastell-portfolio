@@ -9,12 +9,15 @@
     padding: 2px;
 }
 
+.social-container a img{
+    width: 48px;
+}
+
 .social-container a:hover{
     padding: 0px;
 }
 
 .social-container a:hover img{
     width: 52px;
-    height: 52px;
 }
 
