@@ -1,23 +1,14 @@
-import React, { Fragment, useState } from "react";
+import React, {Fragment} from "react";
 import styles from './ProjectDescription.module.css'
 
 const ProjectDescription = props => {
 
-    const [showDescription, setShowDescription] = useState(true);
-    
-    const MouseEnterHandler = () => { 
-        setShowDescription(true);
-    }
-    const mouseOutHandler = () => { 
-        setShowDescription(false);
-    }
-
     return (
         <Fragment>
 
-            <img src={props.data.imgSrc} alt={props.data.imgAlt} className={styles['carousel-img']} onMouseEnter={MouseEnterHandler} onMouseOut={mouseOutHandler}/>
+            <img src={props.data.imgSrc} alt={props.data.imgAlt} className={styles['carousel-img']}/>
             
-            <div className={`${!showDescription ? styles['description-container'] : styles['description-container_enabled']}`}>
+            <div className={styles['description-container']}>
 
                 <h2>{props.data.title}</h2>
                 <p>{props.data.description}</p>
