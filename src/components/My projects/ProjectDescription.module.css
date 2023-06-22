@@ -1,18 +1,33 @@
-.carousel-img {
+.project-container{
+    display: grid;
+    place-items: center;
     width: 75%;
+}
+.project-container:hover .description-container {
+    display: block;
 }
 
 @keyframes showDescriptionContainer {
-    from {
+    0% {
         opacity: 0;
+        bottom: -100%;
     }
-
-    to {
+    50%{
+        opacity: 0.25;
+        bottom: -50%;
+    }
+    100% {
         opacity: 1;
+        bottom: 0%;
     }
 }
 
+.carousel-img{
+    width: 100%;
+}
+
 .description-container {
+    animation: showDescriptionContainer 500ms;
     padding: 20px;
     width: 75%;
     height: 50%;
@@ -20,17 +35,6 @@
     position: absolute;
     bottom: 0px;
     display: none;
-}
-
-.description-container_enabled {
-    animation:showDescriptionContainer 500ms;
-    padding: 20px;
-    width: 75%;
-    height: 50%;
-    background-color: rgba(36, 27, 47, 0.85);
-    position: absolute;
-    bottom: 0px;
-    display: block;
 }
 
 .description-container h2 {
@@ -58,13 +62,10 @@
 }
 
 .project-role {
-    border: 1px solid red;
 }
 
 .project-technologies {
-    border: 1px solid red;
 }
 
 .project-made-by {
-    border: 1px solid red;
 }

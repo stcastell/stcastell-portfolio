@@ -1,10 +1,10 @@
-import React, {Fragment} from "react";
+import React from "react";
 import styles from './ProjectDescription.module.css'
 
 const ProjectDescription = props => {
 
     return (
-        <Fragment>
+        <div className={styles['project-container']}>
 
             <img src={props.data.imgSrc} alt={props.data.imgAlt} className={styles['carousel-img']}/>
             
@@ -32,6 +32,9 @@ const ProjectDescription = props => {
                                 <li key={Math.random()}>{technology}</li>
                             )}
                         </ul>
+                        
+                        
+                        
                     </div>
 
                     <div className={styles["project-made-by"]}>
@@ -42,7 +45,9 @@ const ProjectDescription = props => {
                 </div>
 
             </div>
-        </Fragment>
+
+
+        </div>
 
     );
 }
