@@ -1,5 +1,6 @@
 import React from "react";
 import styles from './ProjectDescription.module.css'
+import Button from "../../UI/Button";
 
 const ProjectDescription = props => {
 
@@ -42,6 +43,14 @@ const ProjectDescription = props => {
                         <p>{props.data.madeBy}</p>
                     </div>
 
+                </div>
+
+                <div className={styles['buttons-container']}>
+
+                    <Button value='Github' isALink={true} url={props.data.githubLink}></Button>
+                    
+                    <Button value='Website' isALink={true} url={props.data.websiteLink}></Button>
+                    
                 </div>
 
             </div>
