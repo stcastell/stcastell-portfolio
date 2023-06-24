@@ -24,7 +24,7 @@
 
 .description-container {
     animation: showDescriptionContainer 500ms;
-    padding: 20px;
+    padding: 0px 20px 0px 20px;
     width: 75%;
     height: 50%;
     background-color: rgba(36, 27, 47, 0.85);
@@ -37,7 +37,7 @@
     font-weight: bolder;
     color: #FAFA00;
     text-align: center;
-    padding-top: 15px;
+    padding: 15px;
 }
 
 .description-container p {
