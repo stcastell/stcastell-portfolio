@@ -16,8 +16,8 @@ const MyProjects = () => {
             roles: ['Web developer', 'Web designer'],
             technologies: ['Technology 1', 'Technology 2'],
             madeBy: 'Jera Devs',
-            githubLink: 'url',
-            websiteLink: 'url',
+            githubLink: 'https://github.com/JeraDevelopers',
+            websiteLink: 'https://jeradevelopers.github.io/',
         },
         {
             imgSrc: "https://img001.prntscr.com/file/img001/60J07WJ3T-eaGiYF9zJP_g.png",
@@ -28,8 +28,8 @@ const MyProjects = () => {
             roles: ['Web developer', 'Role 2'],
             technologies: ['Technology 1', 'Technology 2'],
             madeBy: 'Jera Devs',
-            githubLink: 'url',
-            websiteLink: 'url',
+            githubLink: 'https://github.com/JeraDeveloper/Ikebana',
+            websiteLink: 'https://floristeriaikebana.shop/',
         },
     ]
     const splideOptions = {

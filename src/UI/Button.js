@@ -6,7 +6,7 @@ const Button = props => {
 
     if (isALink) {
         return (
-            <a href={props.url} className={styles['button']} > {props.value}</a>
+            <a href={props.url} className={styles['button']} target='_blank'> {props.value}</a>
         );
     } else { 
         return (
