@@ -20,7 +20,17 @@ const MyEducation = () => {
             title: 'Introduction to web development 2',
             certifyedBy: 'Google',
             finishedOn: 'September, 2020',
+            certificateID: 'A9M XS6 DSD',
             certificateLink: 'https://learndigital.withgoogle.com/activate/validate-certificate-code',
+        },
+        {
+            imageLink: 'https://blob.sololearn.com/avatars/sololearn.png',
+            imageAlt: 'SoloLearn logo',
+            title: 'PHP',
+            certifyedBy: 'SoloLearn',
+            finishedOn: 'November, 2019',
+            certificateID: '1059-5794507',
+            certificateLink: 'https://www.sololearn.com/Certificate/1059-5794507/pdf/',
         },
     ]
 

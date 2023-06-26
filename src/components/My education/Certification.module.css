@@ -19,6 +19,7 @@
 }
 .info{
     color: #FFF;
+    width: 70%;
 }
 .info h3{
     color: #FAFA00;
@@ -30,6 +31,11 @@
 }
 .info ul li{
     margin-top: 3px;
+    display: flex;
+}
+.info ul li i{
+    cursor: copy;
+    margin-left: 10px;
 }
 .cert-key{
     color: #FF7EDB;
@@ -49,8 +55,8 @@
 .link{
     display: grid;
     place-items: center;
+    
 }
 .link i{
     font-size: 50px;
-    
 }

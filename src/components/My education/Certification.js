@@ -3,6 +3,11 @@ import styles from './Certification.module.css';
 
 const Certification = props => {
 
+    const clickHandler = e => { 
+        navigator.clipboard.writeText(e.target.id);
+        alert("Copied to clipboard");
+    }
+
     return (
         <div className={styles.certification}>
             <div className={styles.image}>
@@ -19,12 +24,12 @@ const Certification = props => {
                     </li>
                     <li>
                         <strong className={styles['cert-key']}>Certificate_ID</strong> = <strong className={styles["cert-value-string"]}>"{props.certificateID}"</strong>;
-                        <i class="material-icons">content_copy</i>
+                        <i className='material-icons' onClick={clickHandler} id={props.certificateID}>content_copy</i>
                     </li>
                 </ul>   
             </div>
             <div className={styles.link}>
-                <a href={props.certificateLink} target='_blank'><i class="material-icons">open_in_new</i></a>
+                <a href={props.certificateLink} target='_blank' rel="noreferrer"><i class="material-icons">open_in_new</i></a>
             </div>
         </div>
     );
