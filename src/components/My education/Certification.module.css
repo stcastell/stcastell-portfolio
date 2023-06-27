@@ -37,6 +37,10 @@
     cursor: copy;
     margin-left: 10px;
 }
+.info ul li .call-to-copy {
+    margin-left: 5px;
+    font-weight: normal;
+}
 .cert-key{
     color: #FF7EDB;
     font-weight: normal;
@@ -55,7 +59,10 @@
 .link{
     display: grid;
     place-items: center;
-    
+
+}
+.link a{
+    color: rgb(122, 0, 133);
 }
 .link i{
     font-size: 50px;

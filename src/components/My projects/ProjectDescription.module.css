@@ -4,18 +4,9 @@
     width: 75%;
 }
 .project-container:hover .description-container {
-    display: block;
-}
-
-@keyframes showDescriptionContainer {
-    0% {
-        opacity: 0;
-        bottom: -100%;
-    }
-    100% {
-        opacity: 1;
-        bottom: 0%;
-    }
+    opacity: 1;
+    bottom: 0%;
+    transition: 500ms all ease;
 }
 
 .carousel-img{
@@ -23,14 +14,15 @@
 }
 
 .description-container {
-    animation: showDescriptionContainer 500ms;
     padding: 0px 20px 0px 20px;
     width: 75%;
     height: 50%;
     background-color: rgba(36, 27, 47, 0.85);
     position: absolute;
     bottom: 0px;
-    display: none;
+    opacity: 0;
+    bottom: -100%;
+    transition:500ms all ease;
 }
 
 .description-container h2 {

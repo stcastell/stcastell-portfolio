@@ -1,12 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from './Certification.module.css';
 
 const Certification = props => {
 
-    const clickHandler = e => { 
+    const clickHandler = e => {
         navigator.clipboard.writeText(e.target.id);
-        alert("Copied to clipboard");
-    }
+        isCopying ? setIsCopying(false) : setIsCopying(true);
+    };
+
+    const [isCopying, setIsCopying] = useState(false);
 
     return (
         <div className={styles.certification}>
@@ -17,19 +19,30 @@ const Certification = props => {
                 <h3>{props.title}</h3>
                 <ul>
                     <li>
-                        <strong className={styles['cert-key']}>Certifyed_by</strong> = <strong className={styles["cert-value"]}>"{props.certifyedBy}"</strong>;
+                        <b className={styles['cert-key']}>Certifyed_by</b> = <b className={styles["cert-value"]}>"{props.certifyedBy}"</b>;
                     </li>
                     <li>
-                        <strong className={styles['cert-key']}>Finished_on</strong> = <strong className={styles["cert-value-string"]}>"{props.finishedOn}"</strong>;
+                        <b className={styles['cert-key']}>Finished_on</b> = <b className={styles["cert-value-string"]}>"{props.finishedOn}"</b>;
                     </li>
                     <li>
-                        <strong className={styles['cert-key']}>Certificate_ID</strong> = <strong className={styles["cert-value-string"]}>"{props.certificateID}"</strong>;
-                        <i className='material-icons' onClick={clickHandler} id={props.certificateID}>content_copy</i>
+                        <b className={styles['cert-key']}>
+                            Certificate_ID
+                        </b>
+                        =
+                        <b className={styles["cert-value-string"]}>
+                            "{props.certificateID}"
+                        </b>;
+                        <i className='material-icons' onClick={clickHandler} id={props.certificateID}>
+                            content_copy
+                        </i>
+                        <b className={styles['call-to-copy']}>
+                            {isCopying ? 'Copied to clipboard!' : 'Copy ID'}
+                        </b>
                     </li>
                 </ul>   
             </div>
             <div className={styles.link}>
-                <a href={props.certificateLink} target='_blank' rel="noreferrer"><i class="material-icons">open_in_new</i></a>
+                <a href={props.certificateLink} target='_blank' rel="noreferrer"><i className="material-icons">open_in_new</i></a>
             </div>
         </div>
     );
