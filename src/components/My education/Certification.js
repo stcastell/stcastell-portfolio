@@ -19,7 +19,7 @@ const Certification = props => {
                 <h3>{props.title}</h3>
                 <ul>
                     <li>
-                        <b className={styles['cert-key']}>Certifyed_by</b> = <b className={styles["cert-value"]}>"{props.certifyedBy}"</b>;
+                        <b className={styles['cert-key']}>Certifyed_by</b> = <b className={styles["cert-value"]}>{props.certifyedBy}</b>;
                     </li>
                     <li>
                         <b className={styles['cert-key']}>Finished_on</b> = <b className={styles["cert-value-string"]}>"{props.finishedOn}"</b>;

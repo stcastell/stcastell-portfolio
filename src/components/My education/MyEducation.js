@@ -32,6 +32,16 @@ const MyEducation = () => {
             certificateID: '1059-5794507',
             certificateLink: 'https://www.sololearn.com/Certificate/1059-5794507/pdf/',
         },
+
+        {
+            imageLink: 'https://blob.sololearn.com/avatars/sololearn.png',
+            imageAlt: 'SoloLearn logo',
+            title: 'JavaScript',
+            certifyedBy: 'SoloLearn',
+            finishedOn: 'March, 2021',
+            certificateID: '5794507-1024',
+            certificateLink: 'https://www.sololearn.com/certificates/course/en/5794507/1024/landscape/png',
+        },
     ]
 
     return (
