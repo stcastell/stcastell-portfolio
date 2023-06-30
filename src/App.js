@@ -9,12 +9,56 @@ import './App.css'
 
 
 function App() {
+
+  const imgLinks = {
+    css:{
+      link:"https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+      alt:'CSS logo',
+    },
+    git: {
+      link: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      alt: 'Git logo',
+    },
+    figma: {
+      link: "https://www.vectorlogo.zone/logos/figma/figma-icon.svg",
+      alt: 'Figma logo',
+    },
+    html: {
+      link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg", 
+      alt:'HTML logo.',
+    },
+    javascript: {
+      link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      alt:'JavaScript logo',
+    },
+    photoshop: {
+      link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg",
+      alt:'Photoshop',
+    },
+    react: {
+      link: "https://img.icons8.com/color/144/react-native.png",
+      alt:'React.js logo',
+    },
+    php: {
+      link: "https://www.php.net//images/logos/new-php-logo.svg",
+      alt:'PHP logo',
+    },
+    mysql: {
+      link: "https://img.icons8.com/color/144/mysql-logo.png",
+      alt:'MySQL logo',
+    },
+    python: {
+      link: "https://img.icons8.com/color/144/python--v1.png",
+      alt:'Python logo',
+    }
+  }
+
   return (
     <Fragment>
       <Header/>
       <AboutMe/>
-      <MySkills/>
-      <MyProjects/>
+      <MySkills imgLinks={imgLinks} />
+      <MyProjects imgLinks={imgLinks} />
       <MyEducation />
       <Footer/>
     </Fragment>

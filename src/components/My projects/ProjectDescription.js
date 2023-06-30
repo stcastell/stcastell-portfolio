@@ -30,7 +30,7 @@ const ProjectDescription = props => {
                         <h3>Technologies</h3>
                         <ul>
                             {props.data.technologies.map(technology =>
-                                <li key={Math.random()}>{technology}</li>
+                                <img key={Math.random()} src={technology.link} alt={technology.alt}></img>
                             )}
                         </ul>
                         
@@ -40,7 +40,7 @@ const ProjectDescription = props => {
 
                     <div className={styles["project-made-by"]}>
                         <h3>Made by</h3>
-                        <p>{props.data.madeBy}</p>
+                        <b>{props.data.madeBy}</b>
                     </div>
 
                 </div>

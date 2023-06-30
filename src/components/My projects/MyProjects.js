@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from './MyProjects.module.css'
 import ProjectDescription from "./ProjectDescription";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/skyblue';
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
-const MyProjects = () => {
-
+const MyProjects = props => {
     const projects = [
         {
             imgSrc: "https://img001.prntscr.com/file/img001/naBL2BiiQbyNExMc6Ri4DA.png",
@@ -13,8 +14,8 @@ const MyProjects = () => {
             imgAlt: 'Jera Devs main view',
             title: 'Jera Devs',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus qui perferendis repellendus, consequuntur harum libero enim placeat molestias atque illum vero tempore blanditiis, sit tenetur alias esse ab amet.',
-            roles: ['Web developer', 'Web designer'],
-            technologies: ['Technology 1', 'Technology 2'],
+            roles: ['Web developer', 'UI Designer'],
+            technologies: [props.imgLinks.html, props.imgLinks.css, props.imgLinks.javascript],
             madeBy: 'Jera Devs',
             githubLink: 'https://github.com/JeraDevelopers',
             websiteLink: 'https://jeradevelopers.github.io/',
@@ -25,8 +26,8 @@ const MyProjects = () => {
             imgAlt: 'Ikebana main view',
             title: 'Floristería Ikebana',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus qui perferendis repellendus, consequuntur harum libero enim placeat molestias atque illum vero tempore blanditiis, sit tenetur alias esse ab amet.',
-            roles: ['Web developer', 'Role 2'],
-            technologies: ['Technology 1', 'Technology 2'],
+            roles: ['Web developer', 'UI Designer'],
+            technologies: [props.imgLinks.html, props.imgLinks.css, props.imgLinks.javascript],
             madeBy: 'Jera Devs',
             githubLink: 'https://github.com/JeraDeveloper/Ikebana',
             websiteLink: 'https://floristeriaikebana.shop/',
@@ -47,9 +48,13 @@ const MyProjects = () => {
         easing: 'cubic-bezier(.42,.65,.27,.99)',
     }
 
+    useEffect(() => {
+        Aos.init({ duration: 2000, })
+    }, []);
+
     return (
 
-        <Splide options={splideOptions} className={styles['projects-container']}>
+        <Splide options={splideOptions} className={styles['projects-container']} data-aos="fade">
 
             {projects.map(project =>
                 <SplideSlide key={Math.random()} className={styles['img-container']}>
