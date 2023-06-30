@@ -1,5 +1,7 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import styles from './Certification.module.css';
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const Certification = props => {
 
@@ -8,22 +10,29 @@ const Certification = props => {
         isCopying ? setIsCopying(false) : setIsCopying(true);
     };
 
+    useEffect(() => {
+       Aos.init({duration:500,}) 
+    },[]);
+
     const [isCopying, setIsCopying] = useState(false);
 
     return (
-        <div className={styles.certification}>
+        <div className={styles.certification} data-aos="fade-left">
             <div className={styles.image}>
                 <img src={props.imageLink} alt={props.imageAlt}></img>
             </div>
             <div className={styles.info}>
                 <h3>{props.title}</h3>
                 <ul>
+
                     <li>
                         <b className={styles['cert-key']}>Certifyed_by</b> = <b className={styles["cert-value"]}>{props.certifyedBy}</b>;
                     </li>
+
                     <li>
                         <b className={styles['cert-key']}>Finished_on</b> = <b className={styles["cert-value-string"]}>"{props.finishedOn}"</b>;
                     </li>
+
                     <li>
                         <b className={styles['cert-key']}>
                             Certificate_ID
@@ -39,6 +48,7 @@ const Certification = props => {
                             {isCopying ? 'Copied to clipboard!' : 'Copy ID'}
                         </b>
                     </li>
+                    
                 </ul>   
             </div>
             <div className={styles.link}>
