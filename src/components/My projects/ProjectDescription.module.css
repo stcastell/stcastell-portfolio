@@ -5,9 +5,9 @@
 }
 
 .project-container:hover .description-container {
-    opacity: 1;
+    /* opacity: 1;
     bottom: 0%;
-    transition: 500ms all ease;
+    transition: 500ms all ease; */
 }
 
 .carousel-img {
@@ -21,8 +21,8 @@
     background-color: rgba(36, 27, 47, 0.85);
     position: absolute;
     bottom: 0px;
-    opacity: 0;
-    bottom: -100%;
+    /* opacity: 0;
+    bottom: -100%; */
     transition: 500ms all ease;
     display: flex;
     flex-direction: column;
@@ -96,5 +96,21 @@
 
     .description-container p {
         font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .project-container {
+        width: 100%;
+    }
+
+    .description-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .description-container {
+        height: 70%;
     }
 }

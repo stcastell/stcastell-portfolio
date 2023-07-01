@@ -1,4 +1,4 @@
-.certification{
+.certification {
     width: 60%;
     border-radius: 100px;
     background-color: #262335;
@@ -8,62 +8,86 @@
     justify-content: space-around;
 }
 
-.image{
+.image {
     width: 100px;
     border-radius: 50%;
     display: grid;
     place-items: center;
 }
-.image img{
+
+.image img {
     width: 100%;
 }
-.info{
+
+.info {
     color: #FFF;
     width: 70%;
 }
-.info h3{
+
+.info h3 {
     color: #FAFA00;
     font-size: 20px;
     font-weight: normal;
 }
+
 .info ul {
     list-style: none;
 }
-.info ul li{
+
+.info ul li {
     margin-top: 3px;
     display: flex;
 }
-.info ul li i{
+
+.info ul li i {
     cursor: copy;
     margin-left: 10px;
 }
+
 .info ul li .call-to-copy {
     margin-left: 5px;
     font-weight: normal;
 }
-.cert-key{
+
+.cert-key {
     color: #FF7EDB;
     font-weight: normal;
     font-size: 16px;
 }
+
 .cert-value {
     font-weight: normal;
     color: #27C2EA;
     font-size: 16px;
 }
-.cert-value-string{
+
+.cert-value-string {
     font-weight: normal;
-    color:#FF7E37;
+    color: #FF7E37;
     font-size: 16px;
 }
-.link{
+
+.link {
     display: grid;
     place-items: center;
 
 }
-.link a{
+
+.link a {
     color: rgb(122, 0, 133);
 }
-.link i{
+
+.link i {
     font-size: 50px;
+}
+
+@media screen and (max-width: 975px) {
+    .certification {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 730px) {
+    .certification {
+        width: 95%;
+    }
 }
