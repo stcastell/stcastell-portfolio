@@ -53,16 +53,20 @@ const MyProjects = props => {
     }, []);
 
     return (
+        <div className={styles['projects-container']}>
+            <h2 className={styles.title} id='projects'>My projects</h2>
+            <Splide options={splideOptions} className={styles['splide-container']} data-aos="fade">
 
-        <Splide options={splideOptions} className={styles['projects-container']} data-aos="fade" id='projects'>
+                {projects.map(project =>
+                    <SplideSlide key={Math.random()} className={styles['img-container']}>
+                        <ProjectDescription data={project} />
+                    </SplideSlide>)
+                }
 
-            {projects.map(project =>
-                <SplideSlide key={Math.random()} className={styles['img-container']}>
-                    <ProjectDescription data={project} />
-                </SplideSlide>)
-            }
 
-        </Splide>
+            </Splide>
+        </div>
+
 
     );
 }

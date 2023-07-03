@@ -1,9 +1,18 @@
 .projects-container{
     background-color: rgba(255, 255, 255, 0.05);
+    margin-top: 60px;
     height: 100vh;
+}
+.projects-container .title{
+    color: #FAFA00;
+    text-align: center;
+    padding: 60px 0px 15px 0px;
+}
+.splide-container{
     display: grid;
     place-items: center;
     margin-top: 44px;
+    position:relative;
 }
 .img-container{
     display: grid;

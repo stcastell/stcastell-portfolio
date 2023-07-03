@@ -86,8 +86,23 @@
         width: 80%;
     }
 }
-@media screen and (max-width: 730px) {
+
+@media screen and (max-width: 768px) {
     .certification {
         width: 95%;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .image {
+        width: 50px
+    }
+
+    .info h3 {
+        font-size: 15px;
+    }
+
+    .cert-key, .cert-value, .cert-value-string, .call-to-copy, li>i{
+        font-size: 12px;
     }
 }
