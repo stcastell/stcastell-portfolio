@@ -44,7 +44,7 @@ const MyEducation = () => {
     ]
 
     return (
-        <div className={styles['my-education-container']}>
+        <div className={styles['my-education-container']} id='education'>
             {myEducation.map(item =>
                 <Certification imageLink={item.imageLink} imageAlt={item.imageAlt} title={item.title} certifyedBy={item.certifyedBy} finishedOn={item.finishedOn} certificateID={item.certificateID} certificateLink={item.certificateLink} />
                 )}

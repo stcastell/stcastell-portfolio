@@ -54,7 +54,7 @@ const MyProjects = props => {
 
     return (
 
-        <Splide options={splideOptions} className={styles['projects-container']} data-aos="fade">
+        <Splide options={splideOptions} className={styles['projects-container']} data-aos="fade" id='projects'>
 
             {projects.map(project =>
                 <SplideSlide key={Math.random()} className={styles['img-container']}>

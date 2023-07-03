@@ -4,7 +4,7 @@ import './MySkills.css'
 const MySkills = props => {
 
     return (
-        <div className="my-skills-container">
+        <div className="my-skills-container" id='skills'>
             <h2>My skills</h2>
             <div className="skills-icons">
 
