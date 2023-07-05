@@ -1,6 +1,6 @@
 .about-me-container {
     padding: 0px 15px 0px 15px;
-
+    margin: 0px 0px 60px 0px;
 }
 
 .about-me-container h2 {
@@ -17,7 +17,6 @@
     width: 100%;
     display: grid;
     place-items: center;
-    height: 329px;
 }
 
 .about-me-container .image img {
@@ -32,12 +31,23 @@
     margin-top: 15px;
 }
 
-.about-me-container .info{
+.about-me-container .info {
     display: grid;
     place-items: center;
 }
 
-.about-me-container .info p{
-    color:#FFF;
+.about-me-container .info p {
+    color: #FFF;
     padding: 15px;
+}
+
+@media screen and (max-width:768px) {
+
+    .about-me-container .image img {
+        width: 200px;
+    }
+
+    .about-me-container .image p {
+        margin-top: 0px;
+    }
 }

@@ -1,4 +1,10 @@
-header{
+header {
     padding-top: 135px;
-    background-image: linear-gradient(rgba(250,250,0,0.32), #242424 80%);
+    background-image: linear-gradient(rgba(250, 250, 0, 0.32), #242424 80%);
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding-top: 90px;
+    }
 }

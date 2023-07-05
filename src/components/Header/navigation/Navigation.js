@@ -7,7 +7,6 @@ const Navigation = () => {
     
     const toggleMenuHandler = () => {
         setMenuIsActive(!menuIsActive);
-        alert(window.innerWidth)
     }
 
     return (

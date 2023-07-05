@@ -1,4 +1,4 @@
-nav{
+nav {
     display: grid;
     place-items: center;
     position: fixed;
@@ -7,10 +7,12 @@ nav{
     top: -361px;
     z-index: 100;
 }
+
 .active {
     top: 0px;
 }
-nav ul{
+
+nav ul {
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     display: grid;
@@ -19,22 +21,25 @@ nav ul{
     margin: 0px;
     padding: 50px;
 }
-nav ul li{
+
+nav ul li {
     margin: 20px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
-    color:#FFF;
+    color: #FFF;
     font-size: 20px;
     transition: 250ms all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     font-weight: bold;
     color: #FAFA00;
     text-shadow: #FAFA00 0px 0 7.5px;
 }
 
-.nav-button button{
+.nav-button button {
     background-color: #FAFA00;
     width: 150px;
     height: 57.5px;
@@ -43,7 +48,18 @@ nav ul li a:hover{
     border-radius: 0px 0px 200px 200px / 0px 0px 150px 150px;
     border: 0px solid #FAFA00;
 }
-.nav-button i{
+
+.nav-button i {
     font-weight: bold;
-    font-size:30px;
+    font-size: 30px;
+}
+
+@media screen and (max-width:768px) {
+    nav ul {
+        padding: 60px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
 }
