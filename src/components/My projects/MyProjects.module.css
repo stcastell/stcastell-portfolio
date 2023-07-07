@@ -1,21 +1,37 @@
-.projects-container{
+.projects-container {
     background-color: rgba(255, 255, 255, 0.05);
     margin-top: 60px;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
 }
-.projects-container .title{
+
+.projects-container .title {
     color: #FAFA00;
     text-align: center;
-    padding: 60px 0px 15px 0px;
+    padding: 45px 0px 15px 0px;
 }
-.splide-container{
+
+.splide-container {
     display: grid;
     place-items: center;
     margin-top: 44px;
-    position:relative;
+    position: relative;
 }
-.img-container{
+
+.img-container {
     display: grid;
     place-items: center;
 }
 
+@media screen and (max-width: 768px) {
+    .projects-container {
+        height: auto;
+    }
+
+    .projects-container .title {
+        padding: 0px 0px 15px 0px;
+    }
+}
