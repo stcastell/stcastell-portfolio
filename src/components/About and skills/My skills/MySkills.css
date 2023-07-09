@@ -34,6 +34,13 @@
     .my-skills-container .skills-icons {
         grid-template-columns: repeat(3, 1fr);
     }
+
+}
+
+@media screen and (max-width: 768px) {
+    .my-skills-container h2 {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 734px) {
@@ -41,10 +48,11 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .my-skills-container .skills-icons img{
+    .my-skills-container .skills-icons img {
         width: 90%;
     }
 }
+
 @media screen and (max-width: 640px) {
     .my-skills-container .skills-icons {
         grid-template-columns: repeat(4, 1fr);

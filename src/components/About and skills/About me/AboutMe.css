@@ -43,6 +43,10 @@
 
 @media screen and (max-width:768px) {
 
+    .about-me-container h2 {
+        text-align: center;
+    }
+
     .about-me-container .image img {
         width: 200px;
     }
