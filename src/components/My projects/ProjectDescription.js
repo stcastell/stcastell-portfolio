@@ -7,8 +7,8 @@ const ProjectDescription = props => {
     return (
         <div className={styles['project-container']}>
 
-            <img src={props.data.imgSrc} alt={props.data.imgAlt} className={styles['carousel-img']}/>
-            
+            <img src={props.data.imgSrc} alt={props.data.imgAlt} className={styles['carousel-img']} />
+
             <div className={styles['description-container']}>
 
                 <h2>{props.data.title}</h2>
@@ -30,12 +30,11 @@ const ProjectDescription = props => {
                         <h3>Technologies</h3>
                         <ul>
                             {props.data.technologies.map(technology =>
-                                <img key={Math.random()} src={technology.link} alt={technology.alt}></img>
+                                <li key={Math.random()}>
+                                    <img src={technology.link} alt={technology.alt}></img>
+                                </li>
                             )}
                         </ul>
-                        
-                        
-                        
                     </div>
 
                     <div className={styles["project-made-by"]}>
@@ -48,9 +47,9 @@ const ProjectDescription = props => {
                 <div className={styles['buttons-container']}>
 
                     <Button value='Github' isALink={true} url={props.data.githubLink}></Button>
-                    
+
                     <Button value='Website' isALink={true} url={props.data.websiteLink}></Button>
-                    
+
                 </div>
 
             </div>

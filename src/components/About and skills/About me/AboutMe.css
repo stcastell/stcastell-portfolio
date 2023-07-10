@@ -34,11 +34,27 @@
 .about-me-container .info {
     display: grid;
     place-items: center;
+    padding: 15px;
 }
 
 .about-me-container .info p {
-    color: #FFF;
-    padding: 15px;
+    color: #dbdbdb;
+}
+.about-me-container .info p b{
+    font-weight: normal;
+}
+
+.blue{
+    color: #27C2EA;
+}
+.pink {
+    color: rgb(255, 126, 219);
+}
+.yellow {
+    color: #FAFA00;
+}
+.orange {
+    color: #FF7E37;
 }
 
 @media screen and (max-width:768px) {
