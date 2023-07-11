@@ -13,7 +13,7 @@ const MyProjects = props => {
             imgId: 'jeraDevs',
             imgAlt: 'Jera Devs main view',
             title: 'Jera Devs',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus qui perferendis repellendus, consequuntur harum libero enim placeat molestias atque illum vero tempore blanditiis, sit tenetur alias esse ab amet.',
+            description: 'We have recently completed a project for Jera Devs, a landing page and portfolio showcasing their services. Our team, also known as Jera Devs, worked on this project to help promote our services and attract new clients. The purpose of this project was to create a visually appealing and informative website that would help potential clients learn more about us and the services we offer. We completed this project in 2023 and have since continued to update the website to keep it current and relevant.',
             roles: ['Web developer', 'UI Designer'],
             technologies: [props.imgLinks.html, props.imgLinks.css, props.imgLinks.javascript],
             madeBy: 'Jera Devs',
@@ -25,7 +25,7 @@ const MyProjects = props => {
             imgId: 'ikebana',
             imgAlt: 'Ikebana main view',
             title: 'Floristería Ikebana',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus qui perferendis repellendus, consequuntur harum libero enim placeat molestias atque illum vero tempore blanditiis, sit tenetur alias esse ab amet.',
+            description: 'We have recently completed a project for a client called Floristería Ikebana. This project was a collaboration with Jera Developers. The purpose of this project was to create a catalog and gallery for the florist, where customers could browse and purchase products and services easily and comfortably. The project was completed in 2023 and is still being updated to this day.',
             roles: ['Web developer', 'UI Designer'],
             technologies: [props.imgLinks.html, props.imgLinks.css, props.imgLinks.javascript],
             madeBy: 'Jera Devs',
@@ -62,7 +62,6 @@ const MyProjects = props => {
                         <ProjectDescription data={project} />
                     </SplideSlide>)
                 }
-
 
             </Splide>
         </div>

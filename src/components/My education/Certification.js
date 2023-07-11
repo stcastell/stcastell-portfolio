@@ -6,8 +6,13 @@ import 'aos/dist/aos.css';
 const Certification = props => {
 
     const clickHandler = e => {
-        navigator.clipboard.writeText(e.target.id);
-        isCopying ? setIsCopying(false) : setIsCopying(true);
+        // navigator.clipboard.writeText(e.target.id);
+        // isCopying ? setIsCopying(false) : setIsCopying(true);
+        
+            navigator.clipboard.readText()
+                .then(texto => console.log(texto))
+                .catch(() => console.log(undefined));
+        
     };
 
     useEffect(() => {
