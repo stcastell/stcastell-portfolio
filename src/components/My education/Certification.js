@@ -6,13 +6,8 @@ import 'aos/dist/aos.css';
 const Certification = props => {
 
     const clickHandler = e => {
-        // navigator.clipboard.writeText(e.target.id);
-        // isCopying ? setIsCopying(false) : setIsCopying(true);
-        
-            navigator.clipboard.readText()
-                .then(texto => console.log(texto))
-                .catch(() => console.log(undefined));
-        
+        navigator.clipboard.writeText(e.target.id);
+        isCopying ? setIsCopying(false) : setIsCopying(true);
     };
 
     useEffect(() => {
@@ -22,7 +17,7 @@ const Certification = props => {
     const [isCopying, setIsCopying] = useState(false);
 
     return (
-        <div className={styles.certification} >
+        <div className={styles.certification} data-aos="fade">
             {/*  */}
             <div className={styles.image}>
                 <img src={props.imageLink} alt={props.imageAlt}></img>
