@@ -17,7 +17,7 @@ const Certification = props => {
     const [isCopying, setIsCopying] = useState(false);
 
     return (
-        <div className={styles.certification} data-aos="fade">
+        <div className={styles.certification} data-aos="fade-right">
             {/*  */}
             <div className={styles.image}>
                 <img src={props.imageLink} alt={props.imageAlt}></img>

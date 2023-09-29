@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import styles from './MyProjects.module.css'
 import ProjectDescription from "./ProjectDescription";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
@@ -47,15 +46,10 @@ const MyProjects = props => {
         interval: 500,
         easing: 'cubic-bezier(.42,.65,.27,.99)',
     }
-
-    useEffect(() => {
-        Aos.init({ duration: 2000, })
-    }, []);
-
     return (
         <div className={styles['projects-container']}>
             <h2 className={styles.title} id='projects'>My projects</h2>
-            <Splide options={splideOptions} className={styles['splide-container']} data-aos="fade">
+            <Splide options={splideOptions} className={styles['splide-container']} data-aos="fade-up" data-aos-duration='1000'>
 
                 {projects.map(project =>
                     <SplideSlide key={Math.random()} className={styles['img-container']}>

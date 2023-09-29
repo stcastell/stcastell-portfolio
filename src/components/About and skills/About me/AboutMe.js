@@ -1,5 +1,6 @@
 import React from "react";
 import './AboutMe.css'
+import Aos from "aos";
 
 const AboutMe = () => { 
 
@@ -8,7 +9,7 @@ const AboutMe = () => {
             <h2>About me</h2>
             <div className="image-n-info">
                 <div className="image">
-                    <img src="https://i.imgur.com/F25Jh9C.jpg" alt='me.jpg' />
+                    <img data-aos='fade-right' data-aos-delay='500' src="https://i.imgur.com/F25Jh9C.jpg" alt='me.jpg' />
                     <p>{`//This guy is me`}</p>
                 </div>
 
