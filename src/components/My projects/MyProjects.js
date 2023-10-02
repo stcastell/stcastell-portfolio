@@ -49,7 +49,7 @@ const MyProjects = props => {
     return (
         <div className={styles['projects-container']}>
             <h2 className={styles.title} id='projects'>My projects</h2>
-            <Splide options={splideOptions} className={styles['splide-container']} data-aos="fade-up" data-aos-duration='1000'>
+            <Splide options={splideOptions} className={styles['splide-container']} data-aos="fade-up" data-aos-duration='1000' data-aos-delay='100'>
 
                 {projects.map(project =>
                     <SplideSlide key={Math.random()} className={styles['img-container']}>

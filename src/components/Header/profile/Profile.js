@@ -2,17 +2,6 @@ import React from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion';
 import styles from './Profile.module.css'
 
-/*
-import { motion, useScroll, useTransform } from 'framer-motion';
-import Aos from "aos";
-
-const AboutMe = () => { 
-
-    const { scrollY } = useScroll();
-    const xChange = useTransform(scrollY, [0, 300], [-500, 0]);
-    const opacityChange = useTransform(scrollY, [0, 300], [0, 1]);
-*/ 
-
 const Profile = () => {
 
     const { scrollY } = useScroll();
