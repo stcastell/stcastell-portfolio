@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './AboutMe.css'
 import Aos from "aos";
 
 const AboutMe = () => { 
+
+    useEffect(() => { 
+        Aos.init({duration: 500});
+    });
 
     return (
         <div className="about-me-container" id='about-me'>

@@ -1,3 +1,4 @@
+import React, {useEffect} from 'react';
 import styles from './MyProjects.module.css'
 import ProjectDescription from "./ProjectDescription";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
@@ -6,13 +7,18 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
 
 const MyProjects = props => {
+
+    useEffect(() => { 
+        Aos.init({duration:500});
+    });
+
     const projects = [
         {
             imgSrc: "https://img001.prntscr.com/file/img001/naBL2BiiQbyNExMc6Ri4DA.png",
             imgId: 'jeraDevs',
             imgAlt: 'Jera Devs main view',
             title: 'Jera Devs',
-            description: 'We have recently completed a project for Jera Devs, a landing page and portfolio showcasing their services. Our team, also known as Jera Devs, worked on this project to help promote our services and attract new clients. The purpose of this project was to create a visually appealing and informative website that would help potential clients learn more about us and the services we offer. We completed this project in 2023 and have since continued to update the website to keep it current and relevant.',
+            description: 'We have recently completed a project for Jera Devs, a landing page and portfolio to showcasing their services. Our team, also known as Jera Devs, worked on this project to help promote our services and attract new clients. The purpose of this project was to create a visually appealing and informative website that would help potential clients learn more about us and the services we offer. We completed this project in 2023 and have since continued to update the website to keep it current and relevant.',
             roles: ['Web developer', 'UI Designer'],
             technologies: [props.imgLinks.html, props.imgLinks.css, props.imgLinks.javascript],
             madeBy: 'Jera Devs',
@@ -49,7 +55,7 @@ const MyProjects = props => {
     return (
         <div className={styles['projects-container']}>
             <h2 className={styles.title} id='projects'>My projects</h2>
-            <Splide options={splideOptions} className={styles['splide-container']} data-aos="fade-up" data-aos-duration='1000' data-aos-delay='100'>
+            <Splide options={splideOptions} className={styles['splide-container']} data-aos="fade-up" data-aos-duration='1000'>
 
                 {projects.map(project =>
                     <SplideSlide key={Math.random()} className={styles['img-container']}>

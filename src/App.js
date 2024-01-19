@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import Scrollbar from 'smooth-scrollbar';
+// import Scrollbar from 'smooth-scrollbar';
+
 import Header from './components/Header/Header';
 import AboutAndSkills from './components/About and skills/AboutAndSkills';
 import MyEducation from './components/My education/MyEducation';
@@ -10,9 +11,9 @@ import './App.css'
 
 function App() {
 
-//  useEffect(() => { 
-//     Scrollbar.init(document.body, { damping: 0.07 });
-//   },[]); 
+  // useEffect(() => { 
+  //   Scrollbar.init(document.body, { damping: 0.07 });
+  // },[]); 
 
   const imgLinks = {
     css:{
