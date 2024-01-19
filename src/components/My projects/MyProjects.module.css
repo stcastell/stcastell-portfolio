@@ -1,11 +1,11 @@
 .projects-container {
     background-color: rgba(255, 255, 255, 0.05);
     margin-top: 60px;
+    padding: 0px 0px 50px 0px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 15px;
 }
 
 .projects-container .title {
@@ -31,7 +31,14 @@
         height: auto;
     }
 
+    .splide-container {
+        margin-top: 4px;
+        position: static;
+        
+    }
+
     .projects-container .title {
         padding: 0px 0px 15px 0px;
+        margin: 50px 0px 0px 0px;
     }
 }

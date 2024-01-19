@@ -40,7 +40,7 @@ const MyProjects = props => {
     ]
     const splideOptions = {
         type: 'slide',
-        rewind: false,
+        rewind: true,
         perPage: 1,
         perMove: 1,
         gap: '1rem',
