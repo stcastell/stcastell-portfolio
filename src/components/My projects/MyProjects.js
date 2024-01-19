@@ -40,7 +40,7 @@ const MyProjects = props => {
     ]
     const splideOptions = {
         type: 'slide',
-        rewind: true,
+        rewind: false,
         perPage: 1,
         perMove: 1,
         gap: '1rem',
@@ -48,7 +48,7 @@ const MyProjects = props => {
         arrows: true,
         speed: 800,
         pauseOnHover: true,
-        autoplay: true,
+        autoplay: false,
         interval: 500,
         easing: 'cubic-bezier(.42,.65,.27,.99)',
     }
