@@ -36,7 +36,7 @@ const Footer = props => {
             </div>
 
             <div className={styles['copyright-container']}>
-                <p>Made by @stcastell. All rights reserved.</p>
+                <p>Made by <span>@stcastell</span>. All rights reserved.</p>
             </div>
 
         </footer>

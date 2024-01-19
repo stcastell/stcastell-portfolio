@@ -66,7 +66,10 @@ footer .links ul li a:hover {
     text-align: center;
     color: #FFF;
 }
-
+.copyright-container p span{
+    font-weight: bold;
+    color: #FAFA00
+}
 @media screen and (max-width:600px) {
 
     footer .links ul li a,

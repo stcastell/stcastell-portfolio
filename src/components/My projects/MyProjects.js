@@ -62,7 +62,6 @@ const MyProjects = props => {
                         <ProjectDescription data={project} />
                     </SplideSlide>)
                 }
-
             </Splide>
         </div>
 
