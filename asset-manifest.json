@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/stcastell-portfolio/static/css/main.b24c860e.css",
-    "main.js": "/stcastell-portfolio/static/js/main.cd7ca3b0.js",
+    "main.css": "/stcastell-portfolio/static/css/main.730be99d.css",
+    "main.js": "/stcastell-portfolio/static/js/main.4afee1a5.js",
     "static/js/787.e5a318d7.chunk.js": "/stcastell-portfolio/static/js/787.e5a318d7.chunk.js",
     "index.html": "/stcastell-portfolio/index.html",
-    "main.b24c860e.css.map": "/stcastell-portfolio/static/css/main.b24c860e.css.map",
-    "main.cd7ca3b0.js.map": "/stcastell-portfolio/static/js/main.cd7ca3b0.js.map",
+    "main.730be99d.css.map": "/stcastell-portfolio/static/css/main.730be99d.css.map",
+    "main.4afee1a5.js.map": "/stcastell-portfolio/static/js/main.4afee1a5.js.map",
     "787.e5a318d7.chunk.js.map": "/stcastell-portfolio/static/js/787.e5a318d7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b24c860e.css",
-    "static/js/main.cd7ca3b0.js"
+    "static/css/main.730be99d.css",
+    "static/js/main.4afee1a5.js"
   ]
 }
