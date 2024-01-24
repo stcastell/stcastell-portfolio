@@ -41,12 +41,21 @@ const MyEducation = () => {
             certificateID: '5794507-1024',
             certificateLink: 'https://www.sololearn.com/certificates/course/en/5794507/1024/landscape/png',
         },
+        {
+            imageLink: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Wordpress_Blue_logo.png/600px-Wordpress_Blue_logo.png',
+            imageAlt: 'Wordpress logo',
+            title: 'Wordpress',
+            certifyedBy: 'SoloLearn',
+            finishedOn: 'january, 2024',
+            certificateID: '27187975',
+            certificateLink: 'https://i.imgur.com/nZM5aZZ.png',
+        },
     ]
 
     return (
         <div className={styles['my-education-container']} id='education'>
             {myEducation.map(item =>
-                <Certification imageLink={item.imageLink} imageAlt={item.imageAlt} title={item.title} certifyedBy={item.certifyedBy} finishedOn={item.finishedOn} certificateID={item.certificateID} certificateLink={item.certificateLink} />
+                <Certification key={Math.random()} imageLink={item.imageLink} imageAlt={item.imageAlt} title={item.title} certifyedBy={item.certifyedBy} finishedOn={item.finishedOn} certificateID={item.certificateID} certificateLink={item.certificateLink} />
                 )}
         </div>
     );
