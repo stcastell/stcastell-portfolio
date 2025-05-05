@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+//import React, { useEffect } from 'react';
 // import Scrollbar from 'smooth-scrollbar';
 
 import Header from './components/Header/Header';
@@ -30,15 +30,15 @@ function App() {
     },
     html: {
       link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg", 
-      alt:'HTML logo.',
+      alt:'HTML logo',
     },
     javascript: {
       link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
       alt:'JavaScript logo',
     },
     photoshop: {
-      link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg",
-      alt:'Photoshop',
+      link: "https://www.svgrepo.com/show/41189/adobe-photoshop-logo.svg",
+      alt:'Photoshop logo',
     },
     react: {
       link: "https://img.icons8.com/color/144/react-native.png",
@@ -60,10 +60,10 @@ function App() {
 
   return (
     <>
-      <Header />
-      <AboutAndSkills imgLinks={imgLinks} />
-      <MyProjects imgLinks={imgLinks} />
-      <MyEducation />
+      <Header/>
+      <AboutAndSkills imgLinks={imgLinks}/>
+      <MyProjects imgLinks={imgLinks}/>
+      <MyEducation/>
       <Footer/>
     </>
   );

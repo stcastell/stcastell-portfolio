@@ -10,21 +10,20 @@ const AboutMe = () => {
 
     return (
         <div className="about-me-container" id='about-me'>
-            <h2>About me</h2>
+            <h2>Sobre mi</h2>
             <div className="image-n-info">
                 <div className="image">
                     <img data-aos='fade-right' data-aos-delay='500' src="https://i.imgur.com/F25Jh9C.jpg" alt='me.jpg' />
-                    <p>{`//This guy is me`}</p>
                 </div>
 
                 <div className="info">
-                    <p>Hello! My name is <b className="yellow">Santiago Castellanos</b> <i>-also known as <b className="pink">stcastell</b> for my Github profile-</i> and I am a mechatronics engineering student. I am passionate about web development and have had the opportunity to work on several exciting projects in this area. I am a co-founder of <b className="blue">Jera Devs</b>, a company dedicated to developing creative and effective digital solutions.</p>
+                <p>¡Hola! Mi nombre es <b className="yellow">Santiago Castellanos</b> y soy estudiante de ingeniería mecatrónica. Me apasiona el desarrollo web y he tenido la oportunidad de trabajar en varios proyectos emocionantes en esta área. Soy cofundador de <b className="blue">Jera Devs</b>, una empresa dedicada a desarrollar soluciones digitales creativas y efectivas.</p>
 
-                    <p>As a UI designer, I have skills to create attractive and functional user interfaces. Additionally, I have experience in web development using <b className="orange">HTML</b>, <b className="blue">CSS</b>, <b className="yellow">Javascript</b>, <b className="pink">React.js</b>, <b className="blue">PHP</b>, <b className="pink">Bootstrap</b>, and other related technologies. I also have solid knowledge in creating, maintaining, and managing databases.</p>
+                    <p>Como diseñador de UI, tengo habilidades para crear interfaces de usuario atractivas y funcionales. Adicionalmente, tengo experiencia en desarrollo web utilizando <b className="orange">HTML</b>, <b className="blue">CSS</b>, <b className="yellow">Javascript</b>, <b className="pink">React.js</b>, <b className="blue">PHP</b>, <b className="pink">Bootstrap</b>, y otras tecnologías relacionadas. También tengo conocimientos sólidos en la creación, mantenimiento y gestión de bases de datos.</p>
 
-                    <p>I have experience at teamworking using tools such as <b>Github</b> to collaborate and coordinate with other developers. Finally, I am a native Spanish speaker and have a <b className="pink">C1</b> level of English proficiency, which allows me to communicate effectively in both languages.</p>
+                    <p>Como analista <b className="blue">SEO</b>, mi experiencia abarca la auditoría técnica, donde evalúo la optimización de imágenes, la densidad de palabras clave y la estructura de enlaces. En la redacción estratégica, identifico las palabras clave, creo contenido optimizado y analizo su rendimiento para mejorar el posicionamiento.</p>
 
-                    <p>This portfolio is a showcase of my work and skills. Thank you for visiting!</p>
+                    <p>Este portafolio es una muestra de mi trabajo y habilidades. ¡Gracias por tu visita!</p>
                 </div>
             </div>
         </div>

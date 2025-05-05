@@ -9,10 +9,10 @@ const Footer = props => {
             <div className={styles['info-container']}>
                 <div className={styles.links}>
                     <ul>
-                        <li><a href="#about-me">About me</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projets</a></li>
-                        <li><a href="#education">Education</a></li>
+                        <li><a href="#about-me">Sobre mi</a></li>
+                        <li><a href="#skills">Mis habilidades</a></li>
+                        <li><a href="#projects">Mis proyectos</a></li>
+                        <li><a href="#education">Certificaciones</a></li>
                     </ul>
                 </div>
 
@@ -24,10 +24,11 @@ const Footer = props => {
                     <a href='https://github.com/stcastell' target='_blank' rel="noreferrer">
                         <img src="https://img.icons8.com/material/48/FFFFFF/github.png" alt="github" />
                     </a>
-
+                    {/*
                     <a href='https://twitter.com/imsadoc' target='_blank' rel="noreferrer">
                         <img src="https://img.icons8.com/material/48/FFFFFF/twitter--v2.png" alt="twitter--v2" />
                     </a>
+                    */}
 
                     <a href='https://www.linkedin.com/in/stcastell/' target='_blank' rel="noreferrer">
                         <img src="https://img.icons8.com/material/48/FFFFFF/linkedin--v1.png" alt="linkedin--v1" />
@@ -36,7 +37,7 @@ const Footer = props => {
             </div>
 
             <div className={styles['copyright-container']}>
-                <p>Made by <span>@stcastell</span>. All rights reserved.</p>
+                <p>Hecho por <span>@stcastell</span>. Todos los derechos reservados.</p>
             </div>
 
         </footer>

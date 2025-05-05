@@ -5,7 +5,7 @@ const MySkills = props => {
 
     return (
         <div className="my-skills-container" id='skills'>
-            <h2>My skills</h2>
+            <h2>Mis habilidades</h2>
             <div className="skills-icons">
 
                 <img src={props.imgLinks.css.link} alt="css3" />

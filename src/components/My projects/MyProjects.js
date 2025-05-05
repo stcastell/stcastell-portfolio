@@ -18,8 +18,8 @@ const MyProjects = props => {
             imgId: 'jeraDevs',
             imgAlt: 'Jera Devs main view',
             title: 'Jera Devs',
-            description: 'We have recently completed a project for Jera Devs, a landing page and portfolio to showcasing their services. Our team, also known as Jera Devs, worked on this project to help promote our services and attract new clients. The purpose of this project was to create a visually appealing and informative website that would help potential clients learn more about us and the services we offer. We completed this project in 2023 and have since continued to update the website to keep it current and relevant.',
-            roles: ['Web developer', 'UI Designer'],
+            description: 'En 2023, junto con otros desarrolladores, creé Jera Devs, una landing page y portafolio diseñado para destacar nuestros servicios y atraer nuevos clientes. Este proyecto tuvo como objetivo establecer una presencia web atractiva e informativa para que los clientes potenciales conocieran nuestra oferta. Finalizado en 2023, el sitio web se mantiene actualizado para asegurar su relevancia.',
+            roles: ['Desarrollador web', 'Diseñador de UI'],
             technologies: [props.imgLinks.html, props.imgLinks.css, props.imgLinks.javascript],
             madeBy: 'Jera Devs',
             githubLink: 'https://github.com/JeraDevelopers',
@@ -30,12 +30,12 @@ const MyProjects = props => {
             imgId: 'ikebana',
             imgAlt: 'Ikebana main view',
             title: 'Floristería Ikebana',
-            description: 'We have recently completed a project for a client called Floristería Ikebana. This project was a collaboration with Jera Developers. The purpose of this project was to create a catalog and gallery for the florist, where customers could browse and purchase products and services easily and comfortably. The project was completed in 2023 and is still being updated to this day.',
-            roles: ['Web developer', 'UI Designer'],
+            description: 'En el año 2023, con mi equipo de Jera Developers, completamos un proyecto para Floristería Ikebana: un catálogo y galería diseñados para que los clientes exploren y adquieran sus productos y servicios de manera cómoda y fácil. Finalizado en 2023.',
+            roles: ['Desarrollador web', 'Diseñador de UI'],
             technologies: [props.imgLinks.html, props.imgLinks.css, props.imgLinks.javascript],
             madeBy: 'Jera Devs',
             githubLink: 'https://github.com/JeraDeveloper/Ikebana',
-            websiteLink: 'https://floristeriaikebana.shop/',
+            websiteLink: 'unavailable',
         },
     ]
     const splideOptions = {
@@ -54,7 +54,7 @@ const MyProjects = props => {
     }
     return (
         <div className={styles['projects-container']}>
-            <h2 className={styles.title} id='projects'>My projects</h2>
+            <h2 className={styles.title} id='projects'>Mis proyectos</h2>
             <Splide options={splideOptions} className={styles['splide-container']} data-aos="fade-up" data-aos-duration='1000'>
 
                 {projects.map(project =>

@@ -5,11 +5,14 @@
 
 .about-me-container h2 {
     color: #FAFA00;
+    text-align: center;
 }
 
 .about-me-container .image-n-info {
     padding-top: 25px;
     background-color: #241B2F;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 .about-me-container .image {
@@ -17,6 +20,7 @@
     width: 100%;
     display: grid;
     place-items: center;
+    padding:10px;
 }
 
 .about-me-container .image img {

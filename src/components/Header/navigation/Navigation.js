@@ -13,10 +13,10 @@ const Navigation = () => {
         <nav className={`${menuIsActive ? styles["active"] : " " }`}>
 
             <ul>
-                <li><a href='#about-me'>About me</a></li>
-                <li><a href='#skills'>Skills</a></li>
-                <li><a href='#projects'>Projects</a></li>
-                <li><a href='#education'>Education</a></li>
+                <li><a href='#about-me'>Sobre mi</a></li>
+                <li><a href='#skills'>Mis habilidades</a></li>
+                <li><a href='#projects'>Mis proyectos</a></li>
+                <li><a href='#education'>Certificaciones</a></li>
             </ul>
 
             <div className={styles["nav-button"]}>

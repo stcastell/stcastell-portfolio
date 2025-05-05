@@ -22,7 +22,7 @@ const Profile = () => {
         <motion.div style={{scale: animateProfile.scale, y:animateProfile.y, opacity: animateProfile.opacity}} initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className={styles["profile-container"]}>
             <img src="https://i.imgur.com/dD8Hehl.png" title="@stcastell" alt="@stcastell"/>
             <h1>@stcastell</h1>
-            <motion.h3 whileHover={{ scale: [1, 1.05, 1], color:colorKeyframes}}>Web developer</motion.h3>
+            <motion.h3 whileHover={{ scale: [1, 1.05, 1], color:colorKeyframes}}>Desarrollador web</motion.h3>
         </motion.div>
 
     )

@@ -27,7 +27,7 @@ const ProjectDescription = props => {
                     </div>
 
                     <div className={styles["project-technologies"]}>
-                        <h3>Technologies</h3>
+                        <h3>Tecnologías</h3>
                         <ul>
                             {props.data.technologies.map(technology =>
                                 <li key={Math.random()}>
@@ -38,7 +38,7 @@ const ProjectDescription = props => {
                     </div>
 
                     <div className={styles["project-made-by"]}>
-                        <h3>Made by</h3>
+                        <h3>Hecho por</h3>
                         <b>{props.data.madeBy}</b>
                     </div>
 
@@ -48,7 +48,7 @@ const ProjectDescription = props => {
 
                     <Button value='Github' isALink={true} url={props.data.githubLink}></Button>
 
-                    <Button value='Website' isALink={true} url={props.data.websiteLink}></Button>
+                    <Button value='Sitio web' isALink={true} url={props.data.websiteLink}></Button>
 
                 </div>
 

@@ -43,14 +43,23 @@
     display: flex;
 }
 
-.info ul li i {
-    cursor: copy;
+.info ul li {
     margin-left: 10px;
+}
+
+.info ul li i{
+    margin-left:20px;
 }
 
 .info ul li .call-to-copy {
     margin-left: 5px;
     font-weight: normal;
+}
+
+.info ul li .no-copy {
+    margin-left: 5px;
+    font-weight: normal;
+    color: #ff8b8b;
 }
 
 .cert-key {
@@ -79,6 +88,14 @@
 
 .link a {
     color: rgb(122, 0, 133);
+}
+
+.copy-id{
+    cursor:copy;
+}
+
+.disabled{
+    cursor: default;
 }
 
 .link i {

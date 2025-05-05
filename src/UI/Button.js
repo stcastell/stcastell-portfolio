@@ -5,6 +5,11 @@ const Button = props => {
     const [isALink, setIsALink] = useState(props.isALink)
 
     if (isALink) {
+        if (props.url === 'unavailable') {
+            return (
+                <a className={styles['button-unavailable']}>No disponible</a>
+            )
+        }
         return (
             <a href={props.url} className={styles['button']} target='_blank' rel='noreferrer'> {props.value}</a>
         );
